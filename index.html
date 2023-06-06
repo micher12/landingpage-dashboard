@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lalezar&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--estilos-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dark"></div>
+    <div id="sair">
+        <h2>Você deseja <b>desconectar?</b></h2>
+        <p>Caso tenha certeza disso clique em sim</p>
+        <div class="sair__content">
+            <p><a id="cancelar" href="index.html">Cancelar</a></p>
+            <p><a id="sim" href="#">Sim</a></p>
+        </div>  
+    </div><!--desconectar-->
+
+    <section class="main">
+        <aside class="sidebar">
+        
+            <div class="menu">
+                <div class="topo">
+                    <h2>@logo</h2>
+                </div><!--topo-->
+    
+                <nav>
+                    <ul>
+                        <li class="selected"><a href="index.html"><i class="fa-solid fa-house"></i> <span> Home</span></a></li>
+                        <li><a href="conteudo.html"><i class="fa-solid fa-folder"></i> <span> Conteúdo</span></a></li>
+                        <li><a href="grafico.html"><i class="fa-solid fa-chart-line"></i> <span> Gráfico</span></a></li>
+                        <li><a href="config.html"><i class="fa-solid fa-gear"></i> <span> Configuração</span></a></li>
+                        <li><a href="duvidas.html"><i class="fa-solid fa-question"></i> <span> Dúvidas</span></a></li>
+                        <li><a href="user.html"><i class="fa-solid fa-user"></i> <span> Usuário</span></a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="desconnect">
+                    <li><a href="#"><i class="fa-solid fa-door-open"></i> <span>Desconectar</span> </a></li>
+                </ul>
+            </div><!--menu-->
+        </aside><!--sidebar-->
+        <!--FIM DA SIDE BAR-->
+
+        <div class="content">
+            <header>
+                <div class="center">
+                    <div class="header__content">
+                        <div class="content__mobile">
+                            <div class="menu__mobile">
+                                <span>
+                                    <div class="line1"></div>
+                                    <div class="line2"></div>
+                                    <div class="line3"></div>
+                                </span>
+                            </div><!--menu__mobile-->
+                        </div>
+                        
+                        <h2>contato@gmail.com</h2>
+                        <span class="sino">
+                            <span class="sinoQnt">1</span>
+                            <i class="fa-regular fa-bell"></i>
+                        </span><!--sino-->
+                        <span class="pesquisa">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text">
+                        </span><!--pesquisa-->
+                    </div><!--header__content-->
+                </div><!--center-->
+            </header>
+            
+            
+            <div class="subContent">
+                <div class="subMain">
+                    <div class="cardMain">
+                        <h2>Ola, @ seja Bem Vindo!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget condimentum turpis. Praesent turpis felis, fringilla vitae mauris ac, feugiat scelerisque magna.</p>
+                    </div><!--cardMain-->
+
+                    <div class="cardMain">
+                        <h2>O que você gostaria de fazer ?</h2>
+                        <div class="cardFlex">
+                            <div class="card__single">
+                                <p><a href="#">alterar o conteúdo de uma página</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">quantas pessoas acessaram meu site </a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">solicitar alteração no site</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">permitir que uma pessoa tenha acesso ao site</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">alterar meu cadastro</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">escrever um artigo para o blog</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><a href="#">visualizar o meu site</a></p>
+                            </div><!--card__single-->
+                        </div><!--cardFlex-->
+                    </div><!--cardMain-->
+
+                    
+
+                    <div class="flexCard">
+                        <div class="cardLeft">
+                            <h2>Deixe uma anotação <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                            <form>
+                                <input type="text" placeholder="titulo">
+                                <input type="text" placeholder="para quem">
+                                <textarea placeholder="o que voce gostaria de anotar" cols="30" rows="6"></textarea>
+                                <a class="button-card" href="#">Enviar</a>
+                            </form>
+                        </div><!--cardLeft-->
+                        <div class="cardRight">
+                            <div class="rightUp">
+                                <h2>Abra um ticket <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                                <p>Não encontrou nenhuma solução na página de <b><a href="#">perguntas frequentes</a></b>?</p>
+                                <a class="button-card" href="#">Solicitar um suporte</a>
+                            </div>
+                            <div class="rightDown">
+                                <h2>Alterar seu cadastro <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                                <p>Caso queira mudar seus dados acesso a página abaixo</p>
+                                <a class="button-card" href="#">Atualizar Cadastro</a>
+                            </div>
+                        </div><!--cardRight-->
+                    </div><!--flexCard-->
+
+                    <div class="cardMain">
+                        <h2>Navegação:</h2>
+                        <div class="cardFlex">
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-house"></i><a href="index.html"> Home</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-folder"></i><a href="conteudo.html"> Conteúdo</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-chart-line"></i><a href="grafico.html"> Gráfico</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-gear"></i><a href="config.html"> Configuração</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-question"></i><a href="duvidas.html"> Dúvidas</a></p>
+                            </div><!--card__single-->
+                            <div class="card__single">
+                                <p><i class="fa-solid fa-user"></i><a href="user.html"> Usuário</a></p>
+                            </div><!--card__single-->
+                        </div><!--cardFlex-->
+                    </div><!--cardMain-->
+
+                    <div class="flexCard">
+                        <div class="cardLeft">
+                            <h2>Deixe uma anotação <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                            <form>
+                                <input type="text" placeholder="titulo">
+                                <input type="text" placeholder="para quem">
+                                <textarea placeholder="o que voce gostaria de anotar" cols="30" rows="6"></textarea>
+                                <a class="button-card" href="#">Enviar</a>
+                            </form>
+                        </div><!--cardLeft-->
+                        <div class="cardRight">
+                            <div class="rightUp">
+                                <h2>Abra um ticket <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                                <p>Não encontrou nenhuma solução na página de <b><a href="#">perguntas frequentes</a></b>?</p>
+                                <a class="button-card" href="#">Solicitar um suporte</a>
+                            </div>
+                            <div class="rightDown">
+                                <h2>Alterar seu cadastro <a href="#"><i class="fa-solid fa-question"></i></a></h2>
+                                <p>Caso queira mudar seus dados acesso a página abaixo</p>
+                                <a class="button-card" href="#">Atualizar Cadastro</a>
+                            </div>
+                        </div><!--cardRight-->
+                    </div><!--flexCard-->
+                    
+                </div><!--subMain-->
+                <div class="subaside">
+                    <div class="subaside__title">
+                        <h2>Últimas Atualizações</h2>
+                    </div>
+                    <div class="subaside__content">
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 3 mintuos</p>
+                                <h2>Nova página inserida</h2>
+                                <p>A página <b><a href="#">Sobre</a></b> foi adicionada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 2 horas</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 5 horas</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 1 dia</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 2 dias</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 3 dias</p>
+                                <h2>Nova página inserida</h2>
+                                <p>A página <b><a href="#">Sobre</a></b> foi adicionada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 4 dias</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 4 dias</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 1 semana atrás</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+                        <div class="subContent__single">
+                            <div class="preLine__content">
+                                <p class="time">Há 1 semana atrás</p>
+                                <h2>Uma página foi editada</h2>
+                                <p>A página <b><a href="#">Conteúdo</a></b> foi editada pelo desenvolvedor</p>
+                            </div><!--preLine__content-->
+                        </div><!--subContent__single-->
+
+
+                    </div><!--subaside__content-->
+                </div><!--subaside-->
+            </div><!--sectionOne-->
+        </div><!--content-->
+        
+    </section>
+    
+   
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

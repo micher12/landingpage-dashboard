@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lalezar&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--estilos-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dark"></div>
+    <div id="sair">
+        <h2>Você deseja <b>desconectar?</b></h2>
+        <p>Caso tenha certeza disso clique em sim</p>
+        <div class="sair__content">
+            <p><a id="cancelar" href="index.html">Cancelar</a></p>
+            <p><a id="sim" href="#">Sim</a></p>
+        </div>  
+    </div><!--desconectar-->
+
+    <section class="main">
+        <aside class="sidebar">
+        
+            <div class="menu">
+                <div class="topo">
+                    <h2>@logo</h2>
+                </div><!--topo-->
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span> Home</span></a></li>
+                        <li class="selected"><a href="conteudo.html"><i class="fa-solid fa-folder"></i> <span> Conteúdo</span></a></li>
+                        <li><a href="grafico.html"><i class="fa-solid fa-chart-line"></i> <span> Gráfico</span></a></li>
+                        <li><a href="config.html"><i class="fa-solid fa-gear"></i> <span> Configuração</span></a></li>
+                        <li><a href="duvidas.html"><i class="fa-solid fa-question"></i> <span> Dúvidas</span></a></li>
+                        <li><a href="user.html"><i class="fa-solid fa-user"></i> <span> Usuário</span></a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="desconnect">
+                    <li><a href="#"><i class="fa-solid fa-door-open"></i> <span>Desconectar</span> </a></li>
+                </ul>
+            </div><!--menu-->
+        </aside><!--sidebar-->
+        <!--FIM DA SIDE BAR-->
+
+        <div class="content">
+            <header>
+                <div class="center">
+                    <div class="header__content">
+                        <div class="content__mobile">
+                            <div class="menu__mobile">
+                                <span>
+                                    <div class="line1"></div>
+                                    <div class="line2"></div>
+                                    <div class="line3"></div>
+                                </span>
+                            </div><!--menu__mobile-->
+                        </div><!--content__mobile-->
+                        
+                        <h2>contato@gmail.com</h2>
+                        <span class="sino">
+                            <span class="sinoQnt">1</span>
+                            <i class="fa-regular fa-bell"></i>
+                        </span><!--sino-->
+                        <span class="pesquisa">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text">
+                        </span><!--pesquisa-->
+                    </div><!--header__content-->
+                </div><!--center-->
+            </header>
+            
+            <div class="center">
+                <h2 class="conteudo__title">Conteúdo</h2>
+                <div class="coteudo__content">
+                    <p class="montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis pretium ex. Integer egestas libero justo, ac semper urna semper non. In consequat cursus leo, nec rhoncus neque. Nam lacus metus, mollis a neque vel, blandit finibus purus. Aliquam ex magna, elementum vestibulum purus non, suscipit finibus metus. Aenean iaculis at diam vel convallis. Duis iaculis, augue quis luctus imperdiet, nibh tellus eleifend neque, in malesuada dolor quam non augue.</p>
+                    <p class="montserrat">Nullam auctor nunc neque, a cursus eros auctor et. Nam nec ipsum mauris. In hac habitasse platea dictumst. Cras at odio dolor. Cras gravida, tellus vitae vehicula bibendum, nunc justo semper leo, sit amet finibus elit diam ac turpis. Nullam rutrum maximus congue. Nulla erat dolor, consequat efficitur elit id, mollis imperdiet tellus.</p>
+                </div>
+            </div><!--center-->
+                      
+        </div><!--content-->
+        
+    </section>
+    
+   
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
